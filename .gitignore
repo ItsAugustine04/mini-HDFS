@@ -1,0 +1,6 @@
+*.pdf
+.vscode
+.DS_STORE
+*pycache*
+storage*
+*.db
