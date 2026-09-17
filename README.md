@@ -2,7 +2,7 @@
 
 A lightweight implementation of the **Hadoop Distributed File System (HDFS)** architecture, built with Python and featuring a modern web-based user interface for file management and system monitoring.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Architecture](#architecture)
@@ -70,7 +70,7 @@ The system follows a **master-slave architecture** pattern:
 
 ## Features
 
-✅ **Core Features:**
+ **Core Features:**
 - File upload with automatic chunking (default 2MB)
 - Distributed chunk storage across multiple datanodes
 - Configurable replication factor (default: 2)
@@ -80,7 +80,7 @@ The system follows a **master-slave architecture** pattern:
 - Chunk hash verification
 - Datanode health monitoring via heartbeat mechanism
 
-✅ **Web Dashboard:**
+ **Web Dashboard:**
 - Modern, responsive UI built with Next.js 14 and React
 - Real-time file browser
 - Upload/download functionality
@@ -88,7 +88,7 @@ The system follows a **master-slave architecture** pattern:
 - Datanode health visualization
 - Styled with Tailwind CSS
 
-✅ **API:**
+ **API:**
 - FastAPI-based REST endpoints
 - Async file operations
 - JSON-based communication between components
@@ -352,10 +352,10 @@ Response:
 
 ## Known Limitations
 
-⚠️ **Partial Features:**
+ **Partial Features:**
 - **Automatic Re-replication:** The system tracks dead nodes but does **not automatically re-replicate** chunks from failed nodes to healthy ones. Manual intervention or system restart is required to rebuild lost replicas.
 
-⚠️ **Other Considerations:**
+ **Other Considerations:**
 - Default to 2 datanodes; adding more requires configuration updates
 - Replication factor fixed at build time
 - No authentication/authorization implemented
